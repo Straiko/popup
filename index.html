@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарный сайт</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>Добро пожаловать на Кулинарный сайт!</h1>
+    <h3 class="sank">Здесь вы найдете множество рецептов и кулинарных советов.</h3>
+    <section class="recipe">
+        <h2>Рецепт: Итальянская паста</h2>
+        <img src="bluda/pasta.jpg" alt="Итальянская паста">
+        <ul>
+            <li>Паста</li>
+            <li>Томаты</li>
+            <li>Базилик</li>
+            <li>Чеснок</li>
+            <li>Оливковое масло</li>
+        </ul>
+        <p>Время приготовления: 30 минут</p>
+        <button class="adviceButton" data-advice="Совет: Добавьте немного воды от варки пасты в соус перед подачей. Это сделает его более кремовым и поможет соусу лучше прилипнуть к пасте!" data-popup="popupPasta">Совет по пасте</button>
+    </section>
+    <section class="recipe">
+        <h2>Рецепт: Шоколадный торт</h2>
+        <img src="bluda/tort.jpg" alt="Шоколадный торт">
+        <ul>
+            <li>Мука</li>
+            <li>Сахар</li>
+            <li>Какао</li>
+            <li>Яйца</li>
+            <li>Масло</li>
+        </ul>
+        <p>Время приготовления: 60 минут</p>
+        <button class="adviceButton" data-advice="Совет: Используйте горячую воду в тесте для торта — это помогает активировать какао и делает торт более влажным и насыщенным!" data-popup="popupCake">Совет по торту</button>
+    </section>
+
+    <div id="popupPasta" class="popup">
+        <div class="popupHeader">
+            <div class="dragHandle">Перетаскивайте меня</div>
+            <span>Совет по пасте</span>
+            <button class="closePopup">&times;</button> 
+        </div>
+        <p id="popupMessagePasta"></p>
+    </div>
+    <div id="popupCake" class="popup">
+        <div class="popupHeader">
+            <div class="dragHandle">Перетаскивайте меня</div>
+            <span>Совет по торту</span>
+            <button class="closePopup">&times;</button> 
+        </div>
+        <p id="popupMessageCake"></p>
+    </div>
+</body>
+</html>

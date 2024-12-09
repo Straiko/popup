@@ -1,0 +1,14 @@
+{
+    "popups": {
+        "popupPasta": {
+            "width": "300px",
+            "height": "150px",
+            "visible": false
+        },
+        "popupCake": {
+            "width": "300px",
+            "height": "150px",
+            "visible": false
+        } 
+    }
+}

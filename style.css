@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+h1 {
+    color: #d2691e;
+    text-align: center; 
+}
+
+.sank {
+    text-align: center; 
+}
+
+.recipe {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #d2691e;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+
+.popup {
+    display: none; 
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); 
+    width: 300px;
+    min-height: 150px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #d2691e;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    z-index: 1000; 
+}
+
+.popupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dragHandle {
+    cursor: move;
+    padding: 2px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #d2691e;
+    font-size: 12px;
+}
+
+.closePopup {
+    background: none;
+    border: none;
+    font-size: 20px; 
+    cursor: pointer;
+}
+
+.closePopup:hover {
+    color: #d2691e;
+}
+
+img {
+    width: 300px;
+    height: auto; 
+    border-radius: 5px; 
+    margin-bottom: 10px;
+}
